@@ -1,8 +1,24 @@
 body {
   font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(
+    401px at 50.6% -0.3%,
+    rgba(255, 255, 255, 0.31) 1.2%,
+    rgb(36, 212, 219) 100.2%
+  );
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.wrapper {
+  height: 400px;
+  width: 400px;
+  background: #f8f8f8;
+  border-radius: 10px;
 }
 
 .card .back-view img {
