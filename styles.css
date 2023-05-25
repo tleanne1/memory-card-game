@@ -86,7 +86,7 @@ ul {
 }
 
 .card .front-view span {
-  color: rgb(36, 212, 219);
+  color: rgb(122, 101, 149);
   font-size: 40px;
 }
 
@@ -104,4 +104,16 @@ ul {
 
 .card.flip .back-view {
   transform: rotateY(0);
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    padding: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .card .back-view img {
+    max-width: 35px;
+  }
 }

@@ -54,6 +54,7 @@ function matchCards(img1, img2) {
 function shuffleCard() {
   matchedCard = 0;
   cardOne = cardTwo = "";
+  disableDeck = false;
   // creating array of 16 items and each item is repeated twice
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
   arr.sort(() => (Math.random() > 0.5 ? 1 : -1)); // sorting array item randomly
@@ -71,6 +72,5 @@ shuffleCard();
 
 cards.forEach((card) => {
   // adding click event to all cards
-  card.classList.add("flip");
   card.addEventListener("click", flipCard);
 });
